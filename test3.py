@@ -90,7 +90,7 @@ from re import purge
 # turtle.done()
 
 
-total = 0
+# total = 0
 
 # for i in range(1,6):
 #     price = float(input(f'Введите цену товара {i}: '))
@@ -335,7 +335,7 @@ total = 0
 #     print('Э т о ниже м аксим альной т е м п е р а т у р ы .')
 
 
-end = 5
+# end = 5
 for num in range(1, end + 1):
     square = num ** 2
     print(f'{num}\t{square}')
