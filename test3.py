@@ -339,3 +339,4 @@ end = 5
 for num in range(1, end + 1):
     square = num ** 2
     print(f'{num}\t{square}')
+
