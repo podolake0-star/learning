@@ -335,12 +335,14 @@ from re import purge
 #     print('Э т о ниже м аксим альной т е м п е р а т у р ы .')
 
 
-# end = 5
+end = 5
 for num in range(1, end + 1):
     square = num ** 2
     print(f'{num}\t{square}')
+
 
 def plus(a, b):
     return a + b
 
 
+print(plus(2, 3))
