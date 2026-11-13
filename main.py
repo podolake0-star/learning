@@ -1,4 +1,4 @@
-import pandas as pd
+# import pandas as pd
 
 # Создаём простой DataFrame
 # data = {'Имя': ['Анна', 'Борис', 'Виктор'], 'Возраст': [25, 30, 35]}
@@ -57,7 +57,7 @@ print(f'Значение равно {value:,d}')
 
 print(f'{name:10}')
 
-print(f'{number:<12d}')
+# print(f'{number:<12d}')
 
 
 
