@@ -335,14 +335,255 @@ from re import purge
 #     print('Э т о ниже м аксим альной т е м п е р а т у р ы .')
 
 
-end = 5
-for num in range(1, end + 1):
-    square = num ** 2
-    print(f'{num}\t{square}')
+# end = 5
+# for num in range(1, end + 1):
+#     square = num ** 2
+#     print(f'{num}\t{square}')
+#
+#
+# def plus(a, b):
+#     return a + b
+#
+#
+# print(plus(2, 3))
+
+# for number in range(6):
+#     print(number)
+# for number in range(2, 6):
+#     print(number)
+
+# for number in range(0, 501, 100):
+#     print(number)
+#
+# for number in range(10, 5, -1):
+#     print(number)
+# for col in range(6):
+#     print('*', end='')
+product = 0
+#
+# while product < 100:
+#  number = float(input("Введите число:"))
+#  product = number * 10
+#  print(f"Результат (product): {product}")
+#
+# print("Цикл завершен: product стал больше или равен 100.")
+
+# while True:
+#     # Ввод первого числа
+#     num1 = int(input("Введите первое число: "))
+#     # Ввод второго числа
+#     num2 = int(input("Введите второе число: "))
+#     # Вычисление и вывод суммы
+#     print("Сумма чисел:", num1 + num2)
+#     # Вопрос о повторении операции
+#     repeat = input("Хотите выполнить операцию ещё раз? (да/нет): ")
+#     # Если пользователь не хочет повторять, выходим из цикла
+#     if repeat.lower() != 'да':
+#         break
+
+# answer = "да"
+
+# while answer.lower() == "да":
+#     num1 = float(input("Введите первое число: "))
+#     num2 = float(input("Введите второе число: "))
+#
+#     total = num1 + num2
+#
+#     print("Сумма чисел:", total)
+#
+#     answer = input("Хотите выполнить операцию еще раз? (да/нет): ")
+#
+# print("Программа завершена.")
+
+# for i in range(0, 1010, 10):
+#  print(i)
 
 
-def plus(a, b):
-    return a + b
+# total = 0  # Переменная для хранения нарастающего итога
+
+# Цикл for выполнит ровно 10 итераций
+# for i in range(10):
+#     # Просим пользователя ввести число
+#     num = int(input(f'Введите {i + 1}-е число: '))
+#     # Добавляем введённое число к общему итогу
+#     total += num
+#
+# # Выводим результат после завершения цикла
+# print(f'Сумма всех чисел составила {total}')
+
+# # Программа ведет учёт нарастающего итога ошибок за 5 дней
+# total = 0  # аккумулятор: общий счётчик ошибок
+#
+# for day in range(1, 6):
+#     errors = int(input(f'Сколько ошибок собрано в день {day}: '))
+#     total += errors  # расширенное присваивание — как раз из прошлого задания
+#
+# print('Всего собрано ошибок за 5 дней:', total)
+
+# Калории, сжигаемые при беге на беговой дорожке
+calories_per_minute = 4.2
 
 
-print(plus(2, 3))
+# # Перебираем минуты: 10, 15, 20, 25, 30
+# for minutes in [10, 15, 20, 25, 30]:
+#     calories_burned = calories_per_minute * minutes
+#     print(f'За {minutes} минут бега сожжено: {calories_burned:.1f} ккал')
+
+
+# # Анализ бюджета за месяц
+# budget = float(input('Введите сумму, выделенную на месяц: '))
+#
+# total_expenses = 0.0  # нарастающий итог расходов
+# more_items = 'да'  # управляющая переменная цикла
+#
+# while more_items == 'да':
+#     expense = float(input('Введите сумму расхода: '))
+#     total_expenses += expense
+#     more_items = input('Есть ещё расходы? (да/нет): ')
+#
+# # Сравниваем расходы с бюджетом
+# difference = budget - total_expenses
+#
+# if difference > 0:
+#     print(f'Вы сэкономили {difference:.2f} руб.')
+# elif difference < 0:
+#     print(f'Вы перерасходовали бюджет на {abs(difference):.2f} руб.')
+# else:
+#     print('Вы вышли ровно в ноль — бюджет использован полностью.')
+
+# Программа для расчёта пройденного расстояния по часам
+# speed = float(input('Какая скорость транспортного средства в км/ч? '))
+# hours = int(input('Сколько часов оно двигалось? '))
+#
+# print('\nЧас\tПройденное расстояние')
+#
+# for hour in range(1, hours + 1):
+#     distance = speed * hour
+#     print(f'{hour}\t{distance}')
+
+# Средняя толщина слоя дождевых осадков за ряд лет
+
+# years = int(input('Сколько лет анализируем? '))
+#
+# total_rainfall = 0.0   # нарастающий итог осадков
+# total_months = 0       # общее количество месяцев
+#
+# # Внешний цикл — по годам
+# for year in range(1, years + 1):
+#     print(f'--- Год {year} ---')
+#     # Внутренний цикл — по месяцам
+#     for month in range(1, 13):
+#         rainfall = float(input(f'Сколько мм осадков выпало в месяце {month}: '))
+#         total_rainfall += rainfall
+#         total_months += 1
+#
+# # Итоги
+# print(f'\nКоличество месяцев: {total_months}')
+# print(f'Общее количество осадков: {total_rainfall:.2f} мм')
+# print(f'Средняя толщина слоя осадков в месяц: {total_rainfall / total_months:.2f} мм')
+
+# # Мелкая монета для зарплаты: удвоение с 1 копейки
+# days = int(input('За сколько дней посчитать зарплату? '))
+#
+# salary_kopecks = 0.01  # зарплата в копейках, старт — 1 копейка
+# total_kopecks = 0      # нарастающий итог в копейках
+#
+# print('\nДень\tЗарплата за день (руб.)')
+#
+# for day in range(1, days + 1):
+#
+#     total_kopecks += salary_kopecks
+#     salary_kopecks *= 2  # удвоение к следующему дню
+#     daily_salary = salary_kopecks / 100  # перевод копеек в рубли
+#     print(f'{day}\t{total_kopecks:.2f} руб.')
+# total_rubles = total_kopecks / 100
+# print(f'\nИтого за {days} дней (до налогов): {total_rubles:.2f} руб.')
+
+# class SalaryCalculator:
+#     """Вычисляет зарплату при удвоении с 1 копейки в день."""
+#
+#     KOPECKS_IN_RUBLE = 100
+#
+#     def __init__(self, days: int):
+#         self.days = days
+#         self.daily_salaries: list[int] = []  # зарплата каждого дня в копейках
+#
+#     def calculate(self) -> list[int]:
+#         """Рассчитывает зарплату за каждый день (в копейках)."""
+#         salary = 1  # первый день — 1 копейка
+#         for _ in range(self.days):
+#             self.daily_salaries.append(salary)
+#             salary *= 2
+#         return self.daily_salaries
+#
+#     @property
+#     def total_kopecks(self) -> int:
+#         """Общая сумма за весь период в копейках."""
+#         return sum(self.daily_salaries)
+#
+#     @property
+#     def total_rubles(self) -> float:
+#         """Общая сумма за весь период в рублях."""
+#         return self.total_kopecks / self.KOPECKS_IN_RUBLE
+#
+#     def print_table(self) -> None:
+#         """Выводит таблицу зарплат по дням и итог."""
+#         print('\nДень\tЗарплата за день (руб.)')
+#         for day, kopecks in enumerate(self.daily_salaries, start=1):
+#             print(f'{day}\t{kopecks / self.KOPECKS_IN_RUBLE:.2f} руб.')
+#         print(f'\nИтого за {self.days} дней (до налогов): '
+#               f'{self.total_rubles:.2f} руб.')
+#
+#
+# def main():
+#     days = int(input('За сколько дней посчитать зарплату? '))
+#     calc = SalaryCalculator(days)
+#     calc.calculate()
+#     calc.print_table()
+
+
+# if __name__ == '__main__':
+#     main()
+
+
+# class SumCalculator:
+#     """Класс для накопления суммы положительных чисел до ввода отрицательного."""
+#
+#     def __init__(self):
+#         self.total = 0  # сумма положительных чисел
+#
+#     def add_number(self, number: float) -> bool:
+#         """
+#         Добавляет число к сумме, если оно положительное.
+#         Возвращает True, если число положительное (продолжаем ввод),
+#         и False, если отрицательное (сигнал остановки).
+#         """
+#         if number < 0:
+#             return False  # сигнал конца ввода
+#         self.total += number
+#         return True  # продолжаем
+#
+#     def get_total(self) -> float:
+#         """Возвращает накопленную сумму."""
+#         return self.total
+#
+#
+# def main():
+#     calculator = SumCalculator()
+#
+#     print("Вводите положительные числа. Для завершения введите отрицательное число.")
+#
+#     while True:
+#         try:
+#             num = float(input("Введите число: "))
+#             if not calculator.add_number(num):
+#                 break  # пользователь ввёл отрицательное — выходим из цикла
+#         except ValueError:
+#             print("Пожалуйста, введите корректное число.")
+#
+#     print(f"Сумма введённых положительных чисел: {calculator.get_total():.2f}")
+#
+#
+# if __name__ == "__main__":
+#     main()
+
